@@ -1,0 +1,213 @@
+@media(max-width:1024px){
+
+}
+
+@media(max-width:991px){
+    .text-content{
+        width:100%;
+    }
+
+   .navigation-wrap .navbar-brand img{
+    height:3.8125rem;
+
+   } 
+
+   .navigation-wrap{
+    text-align:center;
+    background-color: var(--white-color);
+
+   }
+
+   .navigation-wrap .nav-link{
+    line-height:1.875rem;
+   }
+
+   .top-banner{
+    padding:9.375rem 0 9.375rem;
+   }
+
+   .testimonial-section .carousal-item .carousal-caption p{
+    padding:0;
+
+   }
+
+   .footer-section {
+        text-align: center;
+    }
+
+    .footer-social a {
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width:767px){
+  h1{
+    font-size:2.8rem;
+
+  }  
+
+  h2{
+    font-size: 2rem;
+    line-height: 2.0625rem;
+  }
+
+  .top-banner{
+    padding:10.875rem;
+  }
+
+  .story-section{
+    height:auto;
+    padding:3rem 0;
+
+  }
+
+  .testimonial-section .carousal-item{
+    padding:11rem 3.125rem;
+
+  }
+  .footer-title {
+        font-size: 1.1rem;
+    }
+
+    .footer-newsletter .form-control,
+    .footer-btn {
+        height: 2.7rem;
+    }
+
+      .contact-desc {
+      font-size: 0.95rem;
+      padding: 0 10px;
+  }
+
+  .contact-box {
+      margin-bottom: 1.2rem;
+  }
+
+  .contact-box i {
+      font-size: 1.7rem;
+  }
+
+  .contact-subtitle {
+      font-size: 1.6rem;
+  }
+  .order-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .order-card h5 {
+        font-size: 1.1rem;
+    }
+    .team-mini-section img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .story-short-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-box {
+        margin-bottom: 1rem;
+    }
+
+    .contact-page-section h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+  .contact-subtitle {
+      font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width:330px){
+   .testimonial-section .carousal-item{
+    padding:13rem 3.125rem;
+   }
+   .footer-logo {
+        height: 50px;
+    }
+
+      h1 {
+        font-size: 1.6rem !important;
+        line-height: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.3rem !important;
+        line-height: 1.8rem !important;
+    }
+
+    p, .lead {
+        font-size: 0.9rem !important;
+        line-height: 1.4rem !important;
+    }
+
+    /* Navbar tweaks */
+    .navbar-brand img {
+        height: 2.5rem !important;
+    }
+    .navbar-toggler {
+        padding: 0.25rem;
+        font-size: 0.9rem;
+    }
+
+    /* Buttons become full width */
+    .main-btn {
+        width: 100% !important;
+        padding: 0.6rem !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* Contact page boxes */
+    .contact-box h5 {
+        font-size: 1rem !important;
+    }
+    .contact-box p {
+        font-size: 0.85rem !important;
+    }
+
+    /* Story & special banner sections */
+    .story-section, 
+    .story-section2 {
+        padding: 2rem 1rem !important;
+        height: auto !important;
+    }
+
+    /* Images scale perfectly */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Footer */
+    .footer-title {
+        font-size: 1rem !important;
+    }
+    .footer-text,
+    .footer-contact li,
+    .footer-links li {
+        font-size: 0.85rem !important;
+    }
+
+    /* Testimonials fix */
+    .carousel-item {
+        padding: 2rem 0.5rem !important;
+    }
+    .carousel-item img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    /* Order page (order.html) cards */
+    .order-card h5 {
+        font-size: 1rem !important;
+    }
+    .order-card span {
+        font-size: 1.2rem !important;
+    }
+}

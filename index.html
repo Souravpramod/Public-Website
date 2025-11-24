@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Fonts: preconnect + non-blocking load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Preload LCP hero image (webp) -->
+  <link rel="preload" href="images/bg/bg-1.webp" as="image" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary navigation-wrap">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <!-- logo: do not lazy-load -->
+        <picture>
+          <source srcset="images/logo.webp" type="image/webp">
+          <img src="images/logo.png" alt="logo" style="height:48px;">
+        </picture>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#explore-food">Explore Foods</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonial">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item">
+          <a href="contact.html" class="btn btn-primary ms-lg-3 main-btn">1200 345 123</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+</header>
+
+<section id="home">
+    <div class="container-fluid px-0 top-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <h1>Good food choices are good investments</h1>
+                    <p>Great meals don’t just fill your stomach— they lift your mood, energize your day, and bring people together.</p>
+                </div>
+                <div class="mt-4">
+                    <a class="main-btn" href="order.html">Order now! <i class="fas fa-shopping-basket ps-3"></i></a>
+                    <a class="main-btn whitebtn ms-lg-4 mt-lg-0 mt-4" href="learn-more.html">Learn more <i class="fas fa-angle-right ps-3"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="counter">
+    <section class="counter-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-5"><h2><span id="count1"></span>+</h2><p>SAVINGS</p></div>
+                <div class="col-md-3 mb-5"><h2><span id="count2"></span>+</h2><p>PHOTOS</p></div>
+                <div class="col-md-3 mb-5"><h2><span id="count3"></span>+</h2><p>ROCKETS</p></div>
+                <div class="col-md-3 mb-5"><h2><span id="count4"></span>+</h2><p>GLOBES</p></div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="about">
+    <div class="about-section wrapper py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-7 col-md-12">
+                    <div class="card border-0 shadow-sm">
+                        <!-- optimized picture (lazy-load) -->
+                        <picture>
+                            <source srcset="images/img/img-1.webp" type="image/webp">
+                            <img src="images/img/img-1.png" class="img-fluid" alt="about image" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 text-sec">
+                    <h2>We pride ourselves on making real food from the best ingredients</h2>
+                    <p>Every dish we prepare is crafted with care, using fresh produce and authentic recipes that bring out true flavor.</p>
+                    <a class="main-btn mt-4" href="learn-more.html">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container food-type">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 text-sec mb-5">
+                    <h2>We make everything by hand with the best possible ingredients.</h2>
+                    <p>From our sauces to our breads, each item is prepared fresh in our kitchen to ensure quality you can taste.</p>
+                    <ul class="list-unstyled py-3">
+                        <li>Fresh ingredients sourced daily</li>
+                        <li>Recipes crafted by expert chefs</li>
+                        <li>Meals made with love and passion</li>
+                    </ul>
+                    <a class="main-btn mt-4" href="learn-more.html">Learn More</a>
+                </div>
+
+                <div class="col-lg-7 col-md-12">
+                    <div class="card border-0 shadow-sm">
+                        <picture>
+                            <source srcset="images/img/img-2.webp" type="image/webp">
+                            <img src="images/img/img-2.png" class="img-fluid" alt="" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="story">
+    <div class="story-section py-5">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <h2>When a man's stomach is full it makes no difference whether he is rich or poor.</h2>
+                    <p>Good food brings happiness, comfort, and satisfaction to everyone, no matter where they come from.</p>
+                    <a class="main-btn mt-4" href="read-more.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="explore-food">
+    <div class="explore-food wrapper py-5">
+        <div class="container">
+
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <h2>Explore Our Foods</h2>
+                    <p>Discover a wide variety of meals, each prepared to satisfy your cravings and excite your taste buds.</p>
+                </div>
+            </div>
+
+            <div class="row pt-5 g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center p-3">
+                        <picture>
+                            <source srcset="images/img/img-3.webp" type="image/webp">
+                            <img src="images/img/img-3.jpg" class="img-fluid rounded" alt="" loading="lazy">
+                        </picture>
+                        <h4>Rainbow Vegetable Sandwich</h4>
+                        <p class="mt-3 mb-1 text-muted">Time: 15 - 20 Minutes | Serves: 1</p>
+                        <span class="fw-bold">$10.50 <del class="text-muted">$11.70</del></span>
+                        <a class="main-btn mt-4" href="order.html">Order Now!</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center p-3">
+                        <picture>
+                            <source srcset="images/img/img-4.webp" type="image/webp">
+                            <img src="images/img/img-4.jpg" class="img-fluid rounded" alt="" loading="lazy">
+                        </picture>
+                        <h4>Vegetarian Burger</h4>
+                        <p class="mt-3 mb-1 text-muted">Time: 30 - 45 Minutes | Serves: 1</p>
+                        <span class="fw-bold">$9.20 <del class="text-muted">$10.50</del></span>
+                        <a class="main-btn mt-4" href="order.html">Order Now!</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center p-3">
+                        <picture>
+                            <source srcset="images/img/img-5.webp" type="image/webp">
+                            <img src="images/img/img-5.jpg" class="img-fluid rounded" alt="" loading="lazy">
+                        </picture>
+                        <h4>Raspberry Stuffed French Toast</h4>
+                        <p class="mt-3 mb-1 text-muted">Time: 10 - 15 Minutes | Serves: 1</p>
+                        <span class="fw-bold">$12.50 <del class="text-muted">$13.20</del></span>
+                        <a class="main-btn mt-4" href="order.html">Order Now!</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="testimonial">
+    <div class="wrapper testimonial-section">
+       <div class="container text-center">
+            <h2 class="pb-4">Testimonial</h2>
+
+            <div class="row">
+                <div class="col-sm-12 col-lg-10 offset-lg-1">
+
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active text-center p-4">
+                                <picture>
+                                    <source srcset="images/review/tom.webp" type="image/webp">
+                                    <img src="images/review/tom.jpg" class="rounded-circle mx-auto d-block" width="120" height="120" loading="lazy">
+                                </picture>
+                                <div class="mt-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                                <div class="carousel-caption d-block position-static mt-3">
+                                    <h5>Tom Cat</h5>
+                                    <p>"Amazing food, great service, and a warm atmosphere. Truly a delightful experience every time."</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <picture>
+                                    <source srcset="images/review/jerry.webp" type="image/webp">
+                                    <img src="images/review/jerry.jpg" class="rounded-circle mx-auto d-block" width="120" height="120" loading="lazy">
+                                </picture>
+                                <div class="mt-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                                <div class="carousel-caption d-block position-static mt-3">
+                                    <h5>Jerry Mouse</h5>
+                                    <p>"The food was delicious and flavorful. A wonderful spot to enjoy a quick bite."</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <picture>
+                                    <source srcset="images/review/luffy.webp" type="image/webp">
+                                    <img src="images/review/luffy.jpg" class="rounded-circle mx-auto d-block" width="120" height="120" loading="lazy">
+                                </picture>
+                                <div class="mt-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <div class="carousel-caption d-block position-static mt-3">
+                                    <h5>Monkey D Luffy</h5>
+                                    <p>"Every dish was incredible! I couldn’t stop eating. Easily one of the best meals I’ve had."</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+</section>
+
+<section id="faq">
+    <div class="faq-section wrapper py-5">
+        <div class="container">
+
+            <div class="row text-center justify-content-center mb-4">
+                <div class="col-lg-8 col-md-10">
+                    <h2>Frequently Asked Questions</h2>
+                    <p class="text-muted">Here are answers to some of the most common questions from our customers.</p>
+                </div>
+            </div>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            What makes your food special?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">We use fresh ingredients, authentic recipes, and careful preparation to ensure every dish is full of flavor.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Do you offer home delivery?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Yes, we offer fast and reliable delivery to most areas within the city.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Can I customize my order?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Yes, you can request adjustments to suit your dietary needs or personal preferences.</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="book-story">
+    <div class="story-section2 py-5">
+        <div class="container text-center">
+            <h2>Baked Freshly with passion and Love by Top Chefs</h2>
+            <a class="main-btn mt-4" href="learn-more.html">Learn more</a>
+        </div>
+    </div>
+</section>
+
+<section id="newsletter">
+    <div class="newsletter wrapper py-5">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="row text-center justify-content-center mb-4">
+                <div class="col-lg-8 col-md-10">
+                    <h2>Hurry up! Subscribe to our newsletter and get 25% off</h2>
+                    <p>Join our newsletter to receive special offers, new menu updates, and exclusive deals.</p>
+                </div>
+            </div>
+
+            <!-- Contact Form Style -->
+            <form class="newsletter-form shadow p-4 rounded" id="registerForm" novalidate>
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Name -->
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                        <div class="invalid-feedback">Name is required.</div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <div class="invalid-feedback">Valid email required.</div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                        <div class="invalid-feedback">Password is required.</div>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter password" required>
+                        <div class="invalid-feedback">Passwords do not match.</div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-md-4 d-grid mt-3">
+                        <button class="main-btn" type="submit">Subscribe Now</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="footer-section wrapper py-5">
+        <div class="container">
+
+            <div class="row text-center text-md-start">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <picture>
+                        <source srcset="images/logo.webp" type="image/webp">
+                        <img src="images/logo.png" alt="logo" class="footer-logo mb-3" loading="eager">
+                    </picture>
+                    <p class="footer-text">We bring you delicious, freshly prepared meals made with quality ingredients every day.</p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#explore-food">Explore Foods</a></li>
+                        <li><a href="#testimonial">Reviews</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <div class="footer-social">
+                        <a href="https://github.com/Souravpramod"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/sourav_pramod0310?igsh=MTlzeGZpcHp6aXA5OQ%3D%3D&utm_source=qr "><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sourav-pramod-068aa3286/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-contact list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Food Street, Bangalore</li>
+                        <li><i class="fas fa-phone me-2"></i> 1200 345 123</li>
+                        <li><i class="fas fa-envelope me-2"></i> support@foodies.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon–Fri: 9AM–9PM</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="text-center footer-credit">
+                © 2025 <span style="color:var(--third-color); font-weight:600;">Foodies</span>. All Rights Reserved.
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
