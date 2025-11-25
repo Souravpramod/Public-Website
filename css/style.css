@@ -462,3 +462,8 @@ body{
     margin-top: 0.5rem;
     font-family: var(--secondry-font);
 }
+
+.wrapper h1{
+    visibility:hidden;
+}
+
